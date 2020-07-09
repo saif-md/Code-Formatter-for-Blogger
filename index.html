@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Code Formatter For Blogger</title>
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.9/brython.min.js"></script>
+</head>
+
+<body onload="brython()">
+  <header>
+    <h1>Code Formatter For Blogger</h1>
+    <p>Here you can format your codes to post on your Blogger blog without getting those codes executed</p>
+  </header>
+  <div class="main-section">
+    <textarea id="input-area" rows="8"></textarea>
+    <button id="submit-button">Format</button>
+    <p>Here is the formatted code:</p>
+    <textarea id="output-area" rows="8"></textarea>
+  </div>
+  
+  <!-- Script -->
+  <script src="main.py" type="text/python"></script>
+</body>
+</html>
