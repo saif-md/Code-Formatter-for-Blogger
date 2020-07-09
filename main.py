@@ -1,4 +1,4 @@
-from browser import document
+from browser import document, alert
 
 def Formatter(event):
   code = document['input-area'].value
@@ -24,5 +24,5 @@ def copier(event):
   FormattedElement = document['output-area']
   FormattedElement.select()
   document.execCommand('copy')
-  
+  alert('Formatted Code Copied!')
 document['output-area'].bind('focus', copier)
