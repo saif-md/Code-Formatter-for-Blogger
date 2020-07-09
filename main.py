@@ -25,4 +25,4 @@ def copier(event):
   FormattedElement.select()
   document.execCommand('copy')
   alert('Formatted Code Copied!')
-document['output-area'].bind('focus', copier)
+document['output-area'].bind('click', copier)
