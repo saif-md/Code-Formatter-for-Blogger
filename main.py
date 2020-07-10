@@ -13,8 +13,12 @@ def Formatter(event):
       FC += "&amp;"
     elif i == "\n":
       FC += "<br>"
+    elif i == "\t":
+      FC += "  "
     else:
       FC += i
+  
+  FC = "<pre>" + FC + "</pre>"
   
   document['output-area'].text = FC
   
