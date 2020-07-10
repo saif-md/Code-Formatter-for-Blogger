@@ -55,7 +55,7 @@ header p {
 
 #submit-button {
   height: 35px;
-  border: solid 1px bisque;
+  border: solid 1px seagreen;
   border-radius: 0 3px 3px 3px;
   border-top: 0;
   background-color: seagreen;
@@ -81,7 +81,11 @@ header p {
     width: 50%;
   }
 
-  #input-area, #output-area {
+  #input-area {
+    height: 190px;
+  }
+
+  #output-area {
     height: 270px;
   }
 }
