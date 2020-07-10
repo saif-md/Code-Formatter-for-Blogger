@@ -21,8 +21,11 @@ def Formatter(event):
 document['submit-button'].bind('click', Formatter)
 
 def copier(event):
-  FormattedElement = document['output-area']
-  FormattedElement.select()
-  document.execCommand('copy')
-  alert('Formatted Code Copied!')
+  if document['output-area'].value != '':
+    FormattedElement = document['output-area']
+    FormattedElement.select()
+    document.execCommand('copy')
+    alert('Formatted Code Copied!')
+  else:
+    alert('First put your code in the input box please.')
 document['output-area'].bind('click', copier)
